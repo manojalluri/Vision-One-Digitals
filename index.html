@@ -1,0 +1,806 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vision One Digitals </title>
+    <meta name="description"
+        content="Vision One Digitals – Vijayawada's leading digital marketing agency specialising in SEO, Google Ads, Social Media, Branding, Website Development and Video Production. 5★ rated. 100+ clients served." />
+    <meta name="keywords"
+        content="digital marketing agency Vijayawada, SEO Vijayawada, Google Ads Vijayawada, social media marketing, website development Vijayawada, Vision One Digitals" />
+    <meta property="og:title" content="Vision One Digitals | Digital Marketing Agency Vijayawada" />
+    <meta property="og:description"
+        content="Trusted by 100+ businesses. Data-driven strategies that generate real ROI." />
+    <meta property="og:type" content="website" />
+    <link rel="icon" type="image/png" href="/assets/logo.png" />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,600;0,700;0,800;1,600;1,700&display=swap"
+        rel="stylesheet" />
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
+    <link rel="stylesheet" href="/src/style.css" />
+</head>
+
+<body>
+
+    <!-- ============================================================
+     MOBILE NAV DRAWER
+============================================================ -->
+    <nav class="mobile-nav" id="mobileNav">
+        <span class="mobile-nav-close" id="mobileClose"><i class="fas fa-times"></i></span>
+        <a href="#home" onclick="closeMobileNav()">Home</a>
+        <a href="#about" onclick="closeMobileNav()">About</a>
+        <a href="#services" onclick="closeMobileNav()">Services</a>
+        <a href="#why-us" onclick="closeMobileNav()">Why Us</a>
+        <a href="#industries" onclick="closeMobileNav()">Industries</a>
+        <a href="#contact" onclick="closeMobileNav()">Contact</a>
+    </nav>
+
+    <!-- ============================================================
+     HEADER
+============================================================ -->
+    <header id="header">
+        <div class="container header-inner">
+            <a href="#home" class="logo">
+                <img src="/assets/logo.png" alt="Vision One Digitals Logo" />
+            </a>
+
+            <div class="nav-links">
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#services">Services</a>
+                <a href="#why-us">Why Us</a>
+                <a href="#industries">Industries</a>
+                <a href="#contact" class="nav-cta">Book Free Call</a>
+            </div>
+
+            <div class="hamburger" id="hamburger" onclick="toggleMobileNav()">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+    </header>
+
+    <!-- ============================================================
+     HERO SECTION
+============================================================ -->
+    <section class="hero" id="home">
+        <div class="container hero-grid">
+
+            <!-- Left: Content -->
+            <div class="hero-left">
+
+                <h1>
+                    We Transform Brands Into
+                    <span>Digital Powerhouses</span>
+                </h1>
+
+                <p>
+                    Data-driven strategies, creative excellence, and measurable ROI — Vision One Digitals helps local
+                    businesses, hospitals, real estate firms, and entrepreneurs scale fast and sustainably online.
+                </p>
+
+                <div class="hero-ctas">
+                    <a href="#contact" class="btn btn-grad">
+                        <i class="fas fa-calendar-alt"></i> Book Free Strategy Call
+                    </a>
+                    <a href="#services" class="btn btn-outline">
+                        <i class="fas fa-play-circle"></i> Explore Services
+                    </a>
+                </div>
+
+                <div class="trust-row">
+                    <div class="trust-item">
+                        <span class="trust-num">5.0 ★</span>
+                        <span class="trust-lbl">Google Rating</span>
+                    </div>
+                    <div class="trust-item">
+                        <span class="trust-num">100+</span>
+                        <span class="trust-lbl">Happy Clients</span>
+                    </div>
+                    <div class="trust-item">
+                        <span class="trust-num">5+ Yrs</span>
+                        <span class="trust-lbl">Experience</span>
+                    </div>
+                    <div class="trust-item">
+                        <span class="trust-num">10Cr+</span>
+                        <span class="trust-lbl">Revenue Generated</span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ============================================================
+     CLIENTS MARQUEE STRIP
+============================================================ -->
+    <div class="clients-strip">
+        <div class="clients-marquee" id="marquee">
+            <span class="client-logo-item"><i class="fas fa-hospital"></i> Healthcare Clinics</span>
+            <span class="client-logo-item"><i class="fas fa-building"></i> Real Estate Firms</span>
+            <span class="client-logo-item"><i class="fas fa-graduation-cap"></i> Educational Institutions</span>
+            <span class="client-logo-item"><i class="fas fa-shopping-bag"></i> Retail Brands</span>
+            <span class="client-logo-item"><i class="fas fa-store"></i> E-commerce Stores</span>
+            <span class="client-logo-item"><i class="fas fa-briefcase"></i> Startups &amp; SMEs</span>
+            <span class="client-logo-item"><i class="fas fa-utensils"></i> Restaurants</span>
+            <span class="client-logo-item"><i class="fas fa-car"></i> Auto Dealerships</span>
+            <!-- Duplicate for seamless looping -->
+            <span class="client-logo-item"><i class="fas fa-hospital"></i> Healthcare Clinics</span>
+            <span class="client-logo-item"><i class="fas fa-building"></i> Real Estate Firms</span>
+            <span class="client-logo-item"><i class="fas fa-graduation-cap"></i> Educational Institutions</span>
+            <span class="client-logo-item"><i class="fas fa-shopping-bag"></i> Retail Brands</span>
+            <span class="client-logo-item"><i class="fas fa-store"></i> E-commerce Stores</span>
+            <span class="client-logo-item"><i class="fas fa-briefcase"></i> Startups &amp; SMEs</span>
+            <span class="client-logo-item"><i class="fas fa-utensils"></i> Restaurants</span>
+            <span class="client-logo-item"><i class="fas fa-car"></i> Auto Dealerships</span>
+        </div>
+    </div>
+
+    <!-- ============================================================
+     ABOUT SECTION
+============================================================ -->
+    <section class="about section" id="about">
+        <div class="container">
+            <div class="about-grid">
+
+                <!-- Image Side -->
+                <div class="about-img-wrap reveal">
+                    <img src="/assets/logo.png" alt="Vision One Digitals Office"
+                        style="background: linear-gradient(135deg,#fff5ee,#fff); padding: 60px; border-radius: 28px; box-shadow: 0 24px 64px rgba(0,0,0,0.1);" />
+                    <div class="about-float-card">
+                        <p class="big-num">163+</p>
+                        <p>5-Star Reviews on<br>Google &amp; Justdial</p>
+                    </div>
+                </div>
+
+                <!-- Content Side -->
+                <div class="about-content reveal reveal-delay-1">
+                    <p class="section-tag">About Vision One Digitals</p>
+                    <h2 class="section-title">Built on Strategy.<br>Driven by Results.</h2>
+                    <p>
+                        Founded in Vijayawada, Vision One Digitals was built with a singular mission — to be the growth
+                        partner every local business deserves. We combine innovation, strategy, and creativity to craft
+                        compelling digital experiences that captivate audiences and drive meaningful connections.
+                    </p>
+                    <p>
+                        Our customer-first approach means transparent communication at every step, long-term
+                        partnerships over transactional relationships, and performance metrics that actually matter to
+                        your business.
+                    </p>
+
+                    <div class="about-stats">
+                        <div class="stat-card reveal reveal-delay-1">
+                            <div class="num">100+</div>
+                            <p>Projects Delivered Successfully</p>
+                        </div>
+                        <div class="stat-card reveal reveal-delay-2">
+                            <div class="num">5+</div>
+                            <p>Years of Industry Experience</p>
+                        </div>
+                        <div class="stat-card reveal reveal-delay-2">
+                            <div class="num">95%</div>
+                            <p>Client Retention Rate</p>
+                        </div>
+                        <div class="stat-card reveal reveal-delay-3">
+                            <div class="num">10Cr+</div>
+                            <p>Revenue Generated for Clients</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================================
+     SERVICES SECTION
+============================================================ -->
+    <section class="services section" id="services">
+        <div class="container">
+            <div class="text-center mb-60 reveal">
+                <p class="section-tag">What We Do</p>
+                <h2 class="section-title">Premium Digital Services</h2>
+                <p class="section-sub">Every service is a precision tool, crafted to grow your business visibility,
+                    traffic, and revenue.</p>
+            </div>
+
+            <div class="services-grid">
+
+                <div class="service-card reveal">
+                    <div class="svc-icon"><i class="fas fa-search-dollar"></i></div>
+                    <h3>SEO Optimization</h3>
+                    <p>Dominate search results with technical SEO, content strategy, and backlink building that drives
+                        consistent organic traffic and qualified leads.</p>
+                    <a href="#contact" class="svc-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                </div>
+
+                <div class="service-card reveal reveal-delay-1">
+                    <div class="svc-icon"><i class="fas fa-bullhorn"></i></div>
+                    <h3>Social Media Marketing</h3>
+                    <p>Build a loyal, engaged community on Instagram, Facebook, YouTube & LinkedIn with scroll-stopping
+                        content, reels, and strategic campaigns.</p>
+                    <a href="#contact" class="svc-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                </div>
+
+                <div class="service-card reveal reveal-delay-2">
+                    <div class="svc-icon"><i class="fas fa-chart-line"></i></div>
+                    <h3>Performance Ads</h3>
+                    <p>Scale faster with high-converting Google Ads and Meta Ads (Facebook & Instagram) campaigns that
+                        maximise your return on ad spend.</p>
+                    <a href="#contact" class="svc-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                </div>
+
+                <div class="service-card reveal">
+                    <div class="svc-icon"><i class="fas fa-laptop-code"></i></div>
+                    <h3>Website Design & Development</h3>
+                    <p>Premium, mobile-first websites and landing pages built for speed, aesthetics, and conversions —
+                        designed to make lasting impressions.</p>
+                    <a href="#contact" class="svc-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                </div>
+
+                <div class="service-card reveal reveal-delay-1">
+                    <div class="svc-icon"><i class="fas fa-paint-brush"></i></div>
+                    <h3>Branding & Creative Design</h3>
+                    <p>Iconic logos, brand identities, visual systems, and marketing collateral that position your
+                        business as a premium, trustworthy brand.</p>
+                    <a href="#contact" class="svc-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                </div>
+
+                <div class="service-card reveal reveal-delay-2">
+                    <div class="svc-icon"><i class="fas fa-map-marker-alt"></i></div>
+                    <h3>Local SEO & Google My Business</h3>
+                    <p>Rank higher on Google Maps, capture local searches, and drive foot traffic and calls with a fully
+                        optimised GMB profile.</p>
+                    <a href="#contact" class="svc-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                </div>
+
+                <div class="service-card reveal">
+                    <div class="svc-icon"><i class="fas fa-video"></i></div>
+                    <h3>Video Production</h3>
+                    <p>High-quality brand videos, reels, product demos, and testimonial films that tell your story and
+                        captivate your audience.</p>
+                    <a href="#contact" class="svc-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                </div>
+
+                <div class="service-card reveal reveal-delay-1">
+                    <div class="svc-icon"><i class="fas fa-envelope-open-text"></i></div>
+                    <h3>Email & WhatsApp Marketing</h3>
+                    <p>Personalised outreach campaigns that nurture leads, retain customers, and drive repeat sales at a
+                        fraction of paid ad costs.</p>
+                    <a href="#contact" class="svc-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                </div>
+
+                <div class="service-card reveal reveal-delay-2">
+                    <div class="svc-icon"><i class="fas fa-star"></i></div>
+                    <h3>Online Reputation Management</h3>
+                    <p>Build, protect, and grow your brand's reputation online — manage reviews, suppress negativity,
+                        and build trust at scale.</p>
+                    <a href="#contact" class="svc-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================================
+     WHY CHOOSE US
+============================================================ -->
+    <section class="why-us section" id="why-us">
+        <div class="container">
+            <div class="text-center reveal">
+                <p class="section-tag" style="-webkit-text-fill-color:#fff;color:#fff;opacity:0.6;">Why Vision One</p>
+                <h2 class="section-title" style="color:#fff;">Why Ambitious Brands Choose Us</h2>
+                <p class="section-sub" style="color:rgba(255,255,255,0.55);">We're not just another agency — we're your
+                    dedicated growth partner with proven systems.</p>
+            </div>
+
+            <div class="why-grid">
+                <div class="why-card reveal">
+                    <div class="why-icon"><i class="fas fa-bullseye"></i></div>
+                    <h4>ROI-Focused Campaigns</h4>
+                    <p>Every decision is backed by data. We measure what matters — leads, revenue, and growth.</p>
+                </div>
+                <div class="why-card reveal reveal-delay-1">
+                    <div class="why-icon"><i class="fas fa-user-tie"></i></div>
+                    <h4>Dedicated Account Manager</h4>
+                    <p>Your own point-of-contact who understands your brand and is always available for you.</p>
+                </div>
+                <div class="why-card reveal reveal-delay-1">
+                    <div class="why-icon"><i class="fas fa-chart-bar"></i></div>
+                    <h4>Transparent Reporting</h4>
+                    <p>Real-time dashboards and monthly performance reports — no black boxes, ever.</p>
+                </div>
+                <div class="why-card reveal reveal-delay-2">
+                    <div class="why-icon"><i class="fas fa-chess-king"></i></div>
+                    <h4>Custom Strategy Only</h4>
+                    <p>No copy-paste templates. Every campaign is built from scratch around your goals.</p>
+                </div>
+                <div class="why-card reveal reveal-delay-2">
+                    <div class="why-icon"><i class="fas fa-bolt"></i></div>
+                    <h4>Fast Support & Delivery</h4>
+                    <p>Agile team with rapid turnarounds, responsive communication, and zero delays.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================================
+     INDUSTRIES SERVED
+============================================================ -->
+    <section class="industries section" id="industries">
+        <div class="container">
+            <div class="text-center mb-60 reveal">
+                <p class="section-tag">Industries We Serve</p>
+                <h2 class="section-title">Expertise Across Every Sector</h2>
+                <p class="section-sub">We've worked with diverse businesses across Vijayawada and Andhra Pradesh — and
+                    we know your industry inside out.</p>
+            </div>
+
+            <div class="industry-grid">
+                <div class="industry-pill reveal"><i class="fas fa-hospital-alt"></i> Hospitals & Clinics</div>
+                <div class="industry-pill reveal reveal-delay-1"><i class="fas fa-building"></i> Real Estate</div>
+                <div class="industry-pill reveal reveal-delay-1"><i class="fas fa-graduation-cap"></i> Education &
+                    Coaching</div>
+                <div class="industry-pill reveal reveal-delay-2"><i class="fas fa-shopping-cart"></i> E-Commerce</div>
+                <div class="industry-pill reveal"><i class="fas fa-store"></i> Retail Brands</div>
+                <div class="industry-pill reveal reveal-delay-1"><i class="fas fa-rocket"></i> Startups</div>
+                <div class="industry-pill reveal reveal-delay-1"><i class="fas fa-utensils"></i> Restaurants & Food
+                </div>
+                <div class="industry-pill reveal reveal-delay-2"><i class="fas fa-car"></i> Auto Dealerships</div>
+                <div class="industry-pill reveal"><i class="fas fa-gem"></i> Jewellery & Fashion</div>
+                <div class="industry-pill reveal reveal-delay-1"><i class="fas fa-home"></i> Interior Design</div>
+                <div class="industry-pill reveal reveal-delay-1"><i class="fas fa-dumbbell"></i> Gyms & Fitness</div>
+                <div class="industry-pill reveal reveal-delay-2"><i class="fas fa-shield-alt"></i> Legal & Financial
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <!-- ============================================================
+     TESTIMONIALS
+============================================================ -->
+    <section class="testimonials section">
+        <div class="container">
+            <div class="text-center mb-60 reveal">
+                <p class="section-tag">Client Testimonials</p>
+                <h2 class="section-title">What Our Clients Say</h2>
+            </div>
+
+            <div class="testimonial-carousel reveal">
+                <div class="testimonial-slides" id="testimonialSlides">
+
+                    <!-- Slide 1 -->
+                    <div class="testimonial-slide">
+                        <div class="t-card">
+                            <div class="stars">★★★★★</div>
+                            <p class="t-text">"Vision One Digitals truly understood the need for trust and compassion in
+                                the medical field. They significantly boosted my visibility online and helped me connect
+                                with patients who genuinely need my expertise. Outstanding work!"</p>
+                            <div class="t-author">
+                                <span class="t-name">Dr. J Srinivasa Kishore</span>
+                                <span class="t-role">Pediatric Surgeon, Vijayawada</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Slide 2 -->
+                    <div class="testimonial-slide">
+                        <div class="t-card">
+                            <div class="stars">★★★★★</div>
+                            <p class="t-text">"The team at Vision One masterfully elevated the visibility of both Teksa
+                                Interio and Simply Sindhu Kishore. Their creative approach and deep understanding of
+                                digital platforms achieved exceptional results beyond our expectations."</p>
+                            <div class="t-author">
+                                <span class="t-name">J Sindhu Kishore</span>
+                                <span class="t-role">Managing Partner, Teksa Interio</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Slide 3 -->
+                    <div class="testimonial-slide">
+                        <div class="t-card">
+                            <div class="stars">★★★★★</div>
+                            <p class="t-text">"Vision One Digitals translated our quality construction work into a
+                                powerful digital presence. Their strategy boosted our client engagement dramatically and
+                                we now receive consistent, high-quality project inquiries every week."</p>
+                            <div class="t-author">
+                                <span class="t-name">TM Construction Team</span>
+                                <span class="t-role">Real Estate & Construction, Vijayawada</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Slide 4 -->
+                    <div class="testimonial-slide">
+                        <div class="t-card">
+                            <div class="stars">★★★★★</div>
+                            <p class="t-text">"Working with Vision One was the best business decision we made this year.
+                                Our Google ratings improved, our social media presence grew 400%, and we've been
+                                consistently generating quality leads. Highly recommended!"</p>
+                            <div class="t-author">
+                                <span class="t-name">Ravi Kumar</span>
+                                <span class="t-role">Founder, Premium Real Estate Vijayawada</span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="carousel-controls">
+                    <button class="carousel-btn" id="prevBtn" onclick="changeSlide(-1)">
+                        <i class="fas fa-chevron-left"></i>
+                    </button>
+                    <div class="carousel-dots" id="carouselDots"></div>
+                    <button class="carousel-btn" id="nextBtn" onclick="changeSlide(1)">
+                        <i class="fas fa-chevron-right"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================================
+     CONTACT SECTION
+============================================================ -->
+    <section class="contact section" id="contact">
+        <div class="container">
+            <div class="contact-grid">
+
+                <!-- Left Info -->
+                <div class="contact-left reveal">
+                    <p class="section-tag">Get In Touch</p>
+                    <h2 class="section-title">Let's Grow Your<br>Business Online</h2>
+                    <p>Ready to take your digital presence to the next level? Fill the form or reach out directly — our
+                        strategy team will get back to you within 24 hours.</p>
+
+                    <div class="contact-detail">
+                        <div class="contact-detail-icon"><i class="fas fa-phone-alt"></i></div>
+                        <div class="contact-detail-text">
+                            <h4>Call Us</h4>
+                            <a href="tel:+917997192921">+91 79971 92921</a>
+                        </div>
+                    </div>
+
+                    <div class="contact-detail">
+                        <div class="contact-detail-icon"><i class="fab fa-whatsapp"></i></div>
+                        <div class="contact-detail-text">
+                            <h4>WhatsApp</h4>
+                            <a href="https://wa.me/917997192921" target="_blank">Chat with an Expert</a>
+                        </div>
+                    </div>
+
+                    <div class="contact-detail">
+                        <div class="contact-detail-icon"><i class="fas fa-envelope"></i></div>
+                        <div class="contact-detail-text">
+                            <h4>Email</h4>
+                            <a href="mailto:info@visiononedigitals.com">info@visiononedigitals.com</a>
+                        </div>
+                    </div>
+
+                    <div class="contact-detail">
+                        <div class="contact-detail-icon"><i class="fas fa-map-marker-alt"></i></div>
+                        <div class="contact-detail-text">
+                            <h4>Visit Us</h4>
+                            <p>3rd Floor, 40-15/2-19, Brindavan Colony,<br>Sriram Nagar, Vijayawada – 520010</p>
+                        </div>
+                    </div>
+
+                    <div class="hours-box">
+                        <h4><i class="fas fa-clock"></i> &nbsp;Business Hours</h4>
+                        <p>Monday – Saturday: 9:00 AM – 7:00 PM<br>Sunday: By Appointment Only</p>
+                    </div>
+
+                    <a href="https://wa.me/917997192921" class="whatsapp-btn" target="_blank">
+                        <i class="fab fa-whatsapp" style="font-size:22px;"></i>
+                        Chat on WhatsApp Now
+                    </a>
+                </div>
+
+                <!-- Right Form -->
+                <div class="contact-form-wrap reveal reveal-delay-1">
+                    <h3>Book Your Free Strategy Call</h3>
+                    <p class="form-sub">No obligations. Just a focused conversation about your growth.</p>
+
+                    <form id="contactForm" onsubmit="handleSubmit(event)">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="name">Full Name</label>
+                                <input type="text" id="name" placeholder="Your full name" required />
+                            </div>
+                            <div class="form-group">
+                                <label for="phone">Phone Number</label>
+                                <input type="tel" id="phone" placeholder="+91 99999 00000" required />
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" placeholder="your@email.com" />
+                        </div>
+
+                        <div class="form-group">
+                            <label for="business">Business Type</label>
+                            <select id="business">
+                                <option value="">Select your industry</option>
+                                <option>Real Estate</option>
+                                <option>Healthcare / Hospital</option>
+                                <option>Education / Coaching</option>
+                                <option>E-Commerce</option>
+                                <option>Retail Brand</option>
+                                <option>Restaurant / Food</option>
+                                <option>Startup</option>
+                                <option>Interior Design</option>
+                                <option>Auto Dealership</option>
+                                <option>Gym / Fitness</option>
+                                <option>Other</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">Your Goals / Requirements</label>
+                            <textarea id="message" rows="4"
+                                placeholder="Tell us about your business and what you want to achieve online..."></textarea>
+                        </div>
+
+                        <button type="submit" class="form-submit">
+                            <i class="fas fa-paper-plane"></i> &nbsp;Send Message & Book Call
+                        </button>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================================
+     GOOGLE MAP
+============================================================ -->
+    <div class="map-section">
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3826.084024085487!2d80.62145167516826!3d16.50716608433637!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a35f0a2a39d4f4b%3A0x4a46b34c9e1e9b5f!2sVijayawada%2C%20Andhra%20Pradesh!5e0!3m2!1sen!2sin!4v1709384291234!5m2!1sen!2sin"
+            loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Vision One Digitals Location Map">
+        </iframe>
+    </div>
+
+    <!-- ============================================================
+     FOOTER
+============================================================ -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+
+                <!-- Brand -->
+                <div class="footer-brand">
+                    <div class="logo"><img src="/assets/logo.png" alt="Vision One Digitals" /></div>
+                    <p>Empowering Vijayawada's businesses with world-class digital strategies. Innovation meets strategy
+                        meets results.</p>
+                    <div class="social-row">
+                        <a href="https://facebook.com" target="_blank" class="social-link"><i
+                                class="fab fa-facebook-f"></i></a>
+                        <a href="https://instagram.com" target="_blank" class="social-link"><i
+                                class="fab fa-instagram"></i></a>
+                        <a href="https://linkedin.com" target="_blank" class="social-link"><i
+                                class="fab fa-linkedin-in"></i></a>
+                        <a href="https://youtube.com" target="_blank" class="social-link"><i
+                                class="fab fa-youtube"></i></a>
+                        <a href="https://wa.me/917997192921" target="_blank" class="social-link"><i
+                                class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+
+                <!-- Services -->
+                <div class="footer-col">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="#services">SEO Optimization</a></li>
+                        <li><a href="#services">Social Media Marketing</a></li>
+                        <li><a href="#services">Performance Ads</a></li>
+                        <li><a href="#services">Website Development</a></li>
+                        <li><a href="#services">Branding & Design</a></li>
+                        <li><a href="#services">Video Production</a></li>
+                        <li><a href="#services">Local SEO & GMB</a></li>
+                    </ul>
+                </div>
+
+                <!-- Company -->
+                <div class="footer-col">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="#about">About Us</a></li>
+
+                        <li><a href="#industries">Industries</a></li>
+                        <li><a href="#contact">Contact Us</a></li>
+                        <li><a href="#contact">Careers</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact Info -->
+                <div class="footer-col">
+                    <h4>Contact</h4>
+                    <ul>
+                        <li><a href="tel:+917997192921"><i class="fas fa-phone-alt"
+                                    style="margin-right:8px;color:var(--orange);"></i>+91 79971 92921</a></li>
+                        <li><a href="mailto:info@visiononedigitals.com"><i class="fas fa-envelope"
+                                    style="margin-right:8px;color:var(--orange);"></i>info@visiononedigitals.com</a>
+                        </li>
+                        <li style="margin-top:12px;line-height:1.7;font-size:0.88rem;">
+                            <i class="fas fa-map-marker-alt" style="margin-right:8px;color:var(--orange);"></i>
+                            3rd Floor, 40-15/2-19,<br>Brindavan Colony, Sriram Nagar,<br>Vijayawada – 520010
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2025 Vision One Digitals. All Rights Reserved.</p>
+                <div class="footer-legal">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms & Conditions</a>
+                    <a href="#">Sitemap</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ============================================================
+     FLOATING BUTTONS (Desktop)
+============================================================ -->
+    <div class="float-wrap">
+        <a href="https://wa.me/917997192921" class="float-btn float-wa" target="_blank" title="Chat on WhatsApp">
+            <i class="fab fa-whatsapp"></i>
+        </a>
+        <a href="tel:+917997192921" class="float-btn float-call" title="Call Now">
+            <i class="fas fa-phone-alt"></i>
+        </a>
+    </div>
+
+    <!-- Mobile Sticky CTA Bar -->
+    <div class="mobile-sticky" id="mobileSticky">
+        <a href="tel:+917997192921" class="ms-btn ms-call">
+            <i class="fas fa-phone-alt"></i> Call Now
+        </a>
+        <a href="https://wa.me/917997192921" class="ms-btn ms-wa" target="_blank">
+            <i class="fab fa-whatsapp"></i> WhatsApp
+        </a>
+    </div>
+
+    <!-- ============================================================
+     SCRIPTS
+============================================================ -->
+    <script>
+        // ——— Sticky Header ———
+        const header = document.getElementById('header');
+        window.addEventListener('scroll', () => {
+            header.classList.toggle('scrolled', window.scrollY > 60);
+        });
+
+        // ——— Mobile Nav ———
+        function toggleMobileNav() {
+            document.getElementById('mobileNav').classList.add('open');
+            document.getElementById('hamburger').classList.add('open');
+        }
+        function closeMobileNav() {
+            document.getElementById('mobileNav').classList.remove('open');
+            document.getElementById('hamburger').classList.remove('open');
+        }
+        document.getElementById('mobileClose').addEventListener('click', closeMobileNav);
+
+        // ——— Smooth Scroll ———
+        document.querySelectorAll('a[href^="#"]').forEach(a => {
+            a.addEventListener('click', e => {
+                const target = document.querySelector(a.getAttribute('href'));
+                if (target) {
+                    e.preventDefault();
+                    window.scrollTo({ top: target.offsetTop - 80, behavior: 'smooth' });
+                }
+            });
+        });
+
+        // ——— Scroll Reveal ———
+        const revealEls = document.querySelectorAll('.reveal');
+        const revealObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                    revealObserver.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.12 });
+        revealEls.forEach(el => revealObserver.observe(el));
+
+        // ——— Testimonial Carousel ———
+        let currentSlide = 0;
+        const slides = document.querySelectorAll('.testimonial-slide');
+        const dotsContainer = document.getElementById('carouselDots');
+
+        // Build dots
+        slides.forEach((_, i) => {
+            const d = document.createElement('span');
+            d.classList.add('dot');
+            if (i === 0) d.classList.add('active');
+            d.onclick = () => goToSlide(i);
+            dotsContainer.appendChild(d);
+        });
+
+        function goToSlide(n) {
+            currentSlide = (n + slides.length) % slides.length;
+            document.getElementById('testimonialSlides').style.transform = `translateX(-${currentSlide * 100}%)`;
+            document.querySelectorAll('.carousel-dots .dot').forEach((d, i) => {
+                d.classList.toggle('active', i === currentSlide);
+            });
+        }
+
+        function changeSlide(dir) { goToSlide(currentSlide + dir); }
+
+        // Auto-play
+        setInterval(() => changeSlide(1), 5000);
+
+        // ——— Counter Animation ———
+        function animateCounter(el, target, suffix = '') {
+            let count = 0;
+            const inc = target / 60;
+            const timer = setInterval(() => {
+                count += inc;
+                if (count >= target) { count = target; clearInterval(timer); }
+                el.textContent = Math.floor(count) + suffix;
+            }, 24);
+        }
+
+        const counterObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    const numEls = entry.target.querySelectorAll('.num');
+                    numEls.forEach(el => {
+                        const text = el.textContent;
+                        const num = parseInt(text.replace(/\D/g, ''));
+                        const suffix = text.replace(/[0-9]/g, '');
+                        animateCounter(el, num, suffix);
+                    });
+                    counterObserver.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.3 });
+
+        const aboutStats = document.querySelector('.about-stats');
+        if (aboutStats) counterObserver.observe(aboutStats);
+
+        // ——— Form Submit ———
+        function handleSubmit(e) {
+            e.preventDefault();
+            const btn = e.target.querySelector('.form-submit');
+            btn.innerHTML = '<i class="fas fa-check"></i> &nbsp;Message Sent! We\'ll call you soon.';
+            btn.style.background = '#25D366';
+            setTimeout(() => {
+                btn.innerHTML = '<i class="fas fa-paper-plane"></i> &nbsp;Send Message & Book Call';
+                btn.style.background = '';
+                e.target.reset();
+            }, 4000);
+        }
+
+        // ——— Hero number ticker (cosmetic) ———
+        const heroVals = document.querySelectorAll('.hero-metric-val');
+        heroVals.forEach(el => {
+            const original = el.textContent;
+            let offset = 0;
+            setInterval(() => {
+                // Subtle fluctuation to make it feel "live"
+                offset = Math.random() > 0.5 ? 1 : -1;
+            }, 3000);
+        });
+    </script>
+
+</body>
+
+</html>
