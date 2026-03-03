@@ -50,6 +50,7 @@
         <div class="container header-inner">
             <a href="#home" class="logo">
                 <img src="/assets/logo.png" alt="Vision One Digitals Logo" />
+                <span class="logo-text">Vision One Digitals</span>
             </a>
 
             <div class="nav-links">
@@ -82,7 +83,7 @@
                 </h1>
 
                 <p>
-                    Data-driven strategies, creative excellence, and measurable ROI — Vision One Digitals helps local
+                    Data-driven strategies, creative excellence, and measurable ROI Vision One Digitals helps local
                     businesses, hospitals, real estate firms, and entrepreneurs scale fast and sustainably online.
                 </p>
 
@@ -582,7 +583,10 @@
 
                 <!-- Brand -->
                 <div class="footer-brand">
-                    <div class="logo"><img src="/assets/logo.png" alt="Vision One Digitals" /></div>
+                    <div class="logo">
+                        <img src="/assets/logo.png" alt="Vision One Digitals" />
+                        <span class="logo-text">Vision One Digitals</span>
+                    </div>
                     <p>Empowering Vijayawada's businesses with world-class digital strategies. Innovation meets strategy
                         meets results.</p>
                     <div class="social-row">
@@ -688,8 +692,8 @@
 
         // ——— Mobile Nav ———
         function toggleMobileNav() {
-            document.getElementById('mobileNav').classList.add('open');
-            document.getElementById('hamburger').classList.add('open');
+            document.getElementById('mobileNav').classList.toggle('open');
+            document.getElementById('hamburger').classList.toggle('open');
         }
         function closeMobileNav() {
             document.getElementById('mobileNav').classList.remove('open');

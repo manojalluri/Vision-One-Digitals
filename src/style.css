@@ -194,7 +194,9 @@ button {
   left: 0;
   right: 0;
   z-index: 1000;
-  padding: 22px 0;
+  padding: 14px 0;
+  background: var(--white);
+  box-shadow: 0 2px 30px rgba(0, 0, 0, 0.08);
   transition: var(--ease);
 }
 
@@ -202,8 +204,7 @@ button {
   background: rgba(255, 255, 255, 0.96);
   backdrop-filter: blur(24px);
   -webkit-backdrop-filter: blur(24px);
-  padding: 14px 0;
-  box-shadow: 0 2px 30px rgba(0, 0, 0, 0.08);
+  padding: 10px 0;
 }
 
 .header-inner {
@@ -213,9 +214,28 @@ button {
   gap: 24px;
 }
 
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
 .logo img {
   height: 54px;
   width: auto;
+}
+
+.logo-text {
+  font-family: var(--font-head);
+  font-weight: 700;
+  font-size: 1.4rem;
+  background: var(--grad-brand);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  white-space: nowrap;
+  transition: var(--ease);
+  letter-spacing: -0.5px;
 }
 
 .nav-links {
@@ -227,7 +247,7 @@ button {
 .nav-links a {
   font-size: 0.9rem;
   font-weight: 500;
-  color: rgba(255, 255, 255, 0.85);
+  color: var(--dark);
   transition: var(--ease);
 }
 
@@ -267,7 +287,7 @@ button {
   display: block;
   width: 26px;
   height: 2.5px;
-  background: #fff;
+  background: var(--dark);
   border-radius: 4px;
   transition: var(--ease);
 }
@@ -296,7 +316,7 @@ button {
   left: 0;
   right: 0;
   bottom: 0;
-  background: var(--dark-alt);
+  background: var(--white);
   z-index: 999;
   flex-direction: column;
   align-items: center;
@@ -311,7 +331,7 @@ button {
 .mobile-nav a {
   font-size: 1.6rem;
   font-family: var(--font-head);
-  color: #fff;
+  color: var(--dark);
   transition: var(--ease);
 }
 
@@ -324,7 +344,7 @@ button {
   top: 24px;
   right: 24px;
   font-size: 2rem;
-  color: #fff;
+  color: var(--dark);
   cursor: pointer;
   line-height: 1;
 }
@@ -338,7 +358,7 @@ button {
   position: relative;
   overflow: hidden;
   color: #fff;
-  padding: 120px 0 80px;
+  padding: 180px 0 100px;
 }
 
 /* Animated background blobs */
@@ -1589,9 +1609,12 @@ footer {
     height: 44px;
   }
 
-  /* Hero */
+  .logo-text {
+    font-size: 1.15rem;
+  }
+
   .hero {
-    padding: 100px 0 64px;
+    padding: 150px 0 80px;
     text-align: center;
   }
 
