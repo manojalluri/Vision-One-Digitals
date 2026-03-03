@@ -784,17 +784,6 @@
                 e.target.reset();
             }, 4000);
         }
-
-        // ——— Hero number ticker (cosmetic) ———
-        const heroVals = document.querySelectorAll('.hero-metric-val');
-        heroVals.forEach(el => {
-            const original = el.textContent;
-            let offset = 0;
-            setInterval(() => {
-                // Subtle fluctuation to make it feel "live"
-                offset = Math.random() > 0.5 ? 1 : -1;
-            }, 3000);
-        });
     </script>
 
 </body>
